@@ -3,6 +3,8 @@ Spotify Clone
 A Spotify-inspired music search and preview app built with vanilla JavaScript, SCSS, and Node.js. Search by song title or artist, browse album artwork, and play available track previews.
 
 Try the live demo
+<img width="800" height="460" alt="EkranKayd2026-11-2516 52 11-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/85dea18e-b8b9-4067-81b7-92d26ae24b15" />
+
 
 Try searching for Tarkan or Sezen Aksu, then select a result to play its preview. The opening screen shows a selection of NEFFEX tracks.
 
