@@ -21,7 +21,7 @@
 
 ## Features
 
-- Search by song title or artist (try **Tarkan** or **Sezen Aksu**)
+- Search by song title or artist (try **Zara Larsson**, **Lukas Graham** or **Avicii**)
 - Album artwork, track title and artist on every card
 - Built-in player with play/pause, progress bar and volume
 - Opening screen with a curated list of NEFFEX tracks
