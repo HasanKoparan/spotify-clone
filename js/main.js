@@ -28,7 +28,7 @@ ui.form.addEventListener("submit", async (e) => {
   // Eger query degeri yoksa uyari ver
 
   if (!query) {
-    alert("Lütfen gecerli bir arama islemi gerceklestiriniz!!");
+    alert("Please enter a valid search term!");
 
     return; // Fonksiyonu durdur
   }
@@ -37,7 +37,7 @@ ui.form.addEventListener("submit", async (e) => {
   ui.renderLoader();
 
   // Arama sonucunda title´i güncelle
-  ui.sectionTitle.textContent = `${query} icin sonuclar`;
+  ui.sectionTitle.textContent = `Results for ${query}`;
 
   //  Aratilan kelime ile api istegi at
   const songs = await api.getSearchMusic(query);
