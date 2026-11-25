@@ -116,4 +116,3 @@ This is a learning project built as part of the Udemig software development prog
 **Hasan Koparan**
 [LinkedIn](https://www.linkedin.com/) · [More projects on GitHub](https://github.com/HasanKoparan)
 
-<sub>README polished with Claude (Anthropic).</sub>
