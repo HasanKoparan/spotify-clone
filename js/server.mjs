@@ -44,6 +44,9 @@ const server = createServer(async (request, response) => {
   }
 });
 
-server.listen(3000, "127.0.0.1", () => {
-  console.log("Sunucu hazır → http://127.0.0.1:3000");
+const port = Number(process.env.PORT ?? 3000);
+const host = process.env.PORT ? "0.0.0.0" : "127.0.0.1";
+
+server.listen(port, host, () => {
+  console.log(`Sunucu hazır → http://${host}:${port}`);
 });
