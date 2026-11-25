@@ -4,7 +4,12 @@ class API {
   }
 
   async getSearchMusic(query) {
-    const url = new URL("http://127.0.0.1:3000/api/search");
+    const apiBaseUrl =
+      window.location.hostname === "127.0.0.1"
+        ? "http://127.0.0.1:3000"
+        : "https://spotify-clone-qiyi.onrender.com";
+
+    const url = new URL("/api/search", apiBaseUrl);
     url.searchParams.set("q", query);
 
     try {

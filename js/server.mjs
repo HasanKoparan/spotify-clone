@@ -9,7 +9,17 @@ const server = createServer(async (request, response) => {
   }
 
   response.setHeader("Content-Type", "application/json; charset=utf-8");
-  response.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:5500");
+  const origin = request.headers.origin;
+  const allowedOrigins = [
+    "http://127.0.0.1:5500",
+    "https://hasankoparan.github.io",
+  ];
+
+  response.setHeader("Vary", "Origin");
+
+  if (allowedOrigins.includes(origin)) {
+    response.setHeader("Access-Control-Allow-Origin", origin);
+  }
 
   const query = url.searchParams.get("q")?.trim();
 
