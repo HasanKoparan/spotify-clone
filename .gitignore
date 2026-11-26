@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Secrets
+.env
+.env.*
+!.env.example
+.spotify-clone.env
+
+# OS and editor files
+.DS_Store
+.vscode/
